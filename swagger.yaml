@@ -45,8 +45,8 @@ paths:
         description: "Data do ranking"
         required: false
         type: "string"
+        format: "date"
         default: "2023-11-30"
-        example: "AAAA-MM-DD"
       responses:
         200:
           description: "successful operation"
@@ -76,6 +76,7 @@ definitions:
         example: "1"
       dateOfInsertion:
         type: "string"
+        format: "date"
         example: "2023-11-30"
       category:
         type: "string"

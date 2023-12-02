@@ -10,7 +10,7 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "https://mbfqtno09c.execute-api.sa-east-1.amazonaws.com/"
+host: "mbfqtno09c.execute-api.sa-east-1.amazonaws.com/"
 basePath: "dev"
 tags:
 - name: "items"

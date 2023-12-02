@@ -46,6 +46,7 @@ paths:
         required: false
         type: "string"
         default: "2023-11-30"
+        example: "AAAA-MM-DD"
       responses:
         200:
           description: "successful operation"
@@ -60,10 +61,8 @@ definitions:
         example: "Successfully retrieved items."
       data:
         type: "array"
-        xml:
-          wrapped: true
         items:
-        $ref: "#/definitions/Item"
+          $ref: "#/definitions/Item"
   Item:
     type: "object"
     properties:

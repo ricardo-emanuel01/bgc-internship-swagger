@@ -3,13 +3,13 @@ swagger: "2.0"
 info:
   description: "Este é o swagger da API desenvolvida para o processo seletivo da vaga de \
   estagiário em desenvolvimento de software da BGC Brasil."
-  version: "1.0.0"
+  version: "1.0.5"
   title: "Swagger API mais vendidos da Amazon por categoria"
   contact:
     email: "ricardoemanuelde@gmail.com"
   license:
-    name: "Apache 2.0"
-    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+    name: "MIT"
+    url: "https://mit-license.org/"
 host: "mbfqtno09c.execute-api.sa-east-1.amazonaws.com"
 basePath: "/dev"
 tags:

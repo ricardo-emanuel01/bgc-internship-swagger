@@ -10,8 +10,8 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "mbfqtno09c.execute-api.sa-east-1.amazonaws.com/"
-basePath: "dev"
+host: "mbfqtno09c.execute-api.sa-east-1.amazonaws.com"
+basePath: "/dev"
 tags:
 - name: "items"
   description: "Produtos mais vendidos da Amazon por categoria e data"
@@ -25,7 +25,7 @@ paths:
       - "items"
       summary: ""
       description: ""
-      operationId: "uploadFile"
+      operationId: "get-items"
       produces:
       - "application/json"
       parameters:
@@ -42,9 +42,10 @@ paths:
         default: ""
       - name: "date"
         in: "query"
-        description: "Data da obtenção do dado no formato AAAA-MM-DD"
+        description: "Data da ranking"
         required: false
         type: "string"
+        example: "AAAA-MM-DD"
         default: "2023-11-30"
       responses:
         200:
@@ -57,9 +58,11 @@ definitions:
     properties:
       message:
         type: "string"
-        example: "Successfull retrieved items."
+        example: "Successfully retrieved items."
       data:
         type: "array"
+        xml:
+          wrapped: true
         items:
         $ref: "#/definitions/Item"
   Item:

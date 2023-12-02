@@ -84,6 +84,7 @@ definitions:
       price:
         type: "integer"
         format: int64
+        description: "Os preços disponibilizados contém duas casas decimais mas utilizam representação em número inteiro para evitar problemas de precisão"
           
 
 externalDocs:

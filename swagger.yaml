@@ -42,10 +42,9 @@ paths:
         default: ""
       - name: "date"
         in: "query"
-        description: "Data da ranking"
+        description: "Data do ranking"
         required: false
         type: "string"
-        example: "AAAA-MM-DD"
         default: "2023-11-30"
       responses:
         200:

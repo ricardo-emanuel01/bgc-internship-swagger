@@ -10,8 +10,8 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "ricardo-emanuel01.github.io/bgc-internship-swagger/"
-basePath: "/dev"
+host: "https://mbfqtno09c.execute-api.sa-east-1.amazonaws.com/"
+basePath: "dev"
 tags:
 - name: "items"
   description: "Produtos mais vendidos da Amazon por categoria e data"

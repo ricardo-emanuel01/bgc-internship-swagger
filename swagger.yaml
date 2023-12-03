@@ -69,18 +69,23 @@ definitions:
       itemId:
         type: "string"
         example: "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx"
+        description: "UUID que identifica o item no banco de dados"
       title:
         type: "string"
+        description: "Título do produto no site da Amazon"
       rankingMarket:
         type: "string"
         example: "1"
+        description: "Posição no ranking de sua categoria no momento da obtenção do dado"
       dateOfInsertion:
         type: "string"
         format: "date"
         example: "2023-11-30"
+        description: "Data representativa na qual o produto estava no ranking"
       category:
         type: "string"
         example: "computers"
+        description: "Categoria do produto"
       price:
         type: "integer"
         format: int64

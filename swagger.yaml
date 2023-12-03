@@ -75,7 +75,10 @@ definitions:
         description: "Título do produto no site da Amazon"
       rankingMarket:
         type: "string"
-        example: "1"
+        enum:
+        - "1"
+        - "2"
+        - "3"
         description: "Posição no ranking de sua categoria no momento da obtenção do dado"
       dateOfInsertion:
         type: "string"
@@ -84,7 +87,11 @@ definitions:
         description: "Data representativa na qual o produto estava no ranking"
       category:
         type: "string"
-        example: "computers"
+        enum:
+        - "books"
+        - "computers"
+        - "videogames"
+        - "electronics"
         description: "Categoria do produto"
       price:
         type: "integer"
